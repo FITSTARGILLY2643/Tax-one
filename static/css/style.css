@@ -1,0 +1,54 @@
+body{
+  background-color:#e3f2fd;
+ 
+  
+}
+
+.register{
+  color:lightseagreen;
+  margin-bottom: 5px;
+ 
+}
+
+.form-body{
+  border: 0.5px solid #92a8d1;
+  border-radius:8px;
+  padding:20px;
+}
+
+.requests {
+  background-color: rgb(209, 207, 207);
+  color: #23395d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.requests h1 {
+  font-weight: bold;
+}
+
+.user-info {
+  color: #23395d;
+  background-color: rgb(88, 88, 88);
+}
+
+.table {
+  color: white;
+}
+
+thead {
+  background-color: #23395d;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(122, 122, 122);
+}
+
+tr:hover {
+  background-color: #23395d;
+}
+
+
+

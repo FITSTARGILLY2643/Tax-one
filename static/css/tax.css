@@ -1,0 +1,59 @@
+body{
+    background-color:#e3f2fd;
+   
+    
+  }
+  
+  .register{
+    color:lightseagreen;
+    margin-bottom: 5px;
+   
+  }
+  
+  .form-body{
+    border: 0.5px solid #92a8d1;
+    border-radius:8px;
+    padding:20px;
+  }
+  
+  .requests {
+    background-color: rgb(209, 207, 207);
+    color: lightseagreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .requests h1 {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .user-info {
+    background-color: rgb(35, 68, 65);
+  }
+  
+  .table {
+    color: white;
+  }
+  
+  thead {
+    background-color:rgb(4, 39, 36);
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgb(23, 94, 88);
+  }
+  
+  tr:hover {
+    background-color:rgb(61, 87, 85);
+  }
+
+  .profile_image{
+      margin-right: 10px;
+  }
+  
+  
+  
+  

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+<div class="container register"><br><br>
+    <div class="row sign-up">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+		
+            {% if form.errors %}
+            <p class="small">Password or Username is incorrect</p>
+            {% endif %}
+            <div class="section form-body">
+				<div style='text-align:center;'>
+					<img src="/static/images/ncpwd-logo.png" alt="Ncpwd Logo" height="120" width="120" />
+				</div>
+                <h1 style='text-align:center;'><b>User Login</b></h1>
+                <div class="form-section">
+					
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        {% bootstrap_form form layout='inline' %}
+
+						
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-outline-info btn-sm" value="Login">
+                        </div>
+                        <input type="hidden" name="next" value="{{next}}">
+                    </form>
+                </div>
+            </div>
+            <div class="section">
+                <p class="text-muted">Don't have an account? <a href="{% url 'register' %}"><i>Register Here</i></a>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+{% endblock %}
